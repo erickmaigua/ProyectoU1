@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" style="background-color: blue;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Seción</title>
+</head>
+
+<body>
+    <main style="background-color: white; width: 380px; height: 600px; margin: 100px auto; border-radius: 10px; padding: 20px;">
+        <img src = "img/Logo2.png" alt = "logo" style="height: 100px; margin-top: 20px; margin-bottom: 20px;text-align: center; display: block; margin-left: auto; margin-right: auto;">
+        <h1 style="text-align: center;">Portal de autenticación</h1>
+        <h2 style="font-weight: 3; font-size: large;text-align: center;">Sistema de Reservas - ESPE</h2>
+        <h3 style="font-weight: 3; font-size: medium;text-align: center;">Acceso restringido a personal autorizado</h3>
+        <br>
+        <form action="/pages/Reserva/Reserva.html" method="get" >
+            <label for="correo" style="text-align: center; ">Correo Electrónico:</label>
+            <br>
+            <input type="email" id="correo" name="correo" placeholder="usuario@espe.edu.ec" required style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 50%;" >
+            <br><br>
+            <label for="contraseña" style="text-align: center; ">Contraseña:</label>
+            <br>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y tener 8 o más caracteres" required style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 50%;" >
+            <br><br>
+            <input type="submit" value="Iniciar Seción" style="background-color: blue; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;margin-right: 0;margin-left: 36%;">
+        </form>
+        <br>
+        <p style="text-align: center;color: blue;">¿Olvidaste tu contraseña?</p>
+        <footer style="text-align: center; font-size: 12px;">Universidad de las Fuerzas Armadas "ESPE"
+            <p>Santo Domingo - Ecuador</p>
+        </footer>
+    </main>
+</body>
+
+</html>
