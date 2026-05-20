@@ -1,35 +1,77 @@
 <!DOCTYPE html>
-<html lang="es" style="background-color: blue;">
+<html lang="es"
+    style="background-color:#155DFC; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0;">
 
 <head>
     <meta charset="UTF-8">
-    <title>Inicio de Seción</title>
+    <title>Inicio de Sesión</title>
+    <link rel="icon" href="icon/Logon_theapplication_2961.ico"  type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" >
 </head>
 
-<body>
-    <main style="background-color: white; width: 380px; height: 600px; margin: 100px auto; border-radius: 10px; padding: 20px;">
-        <img src = "img/Logo2.png" alt = "logo" style="height: 100px; margin-top: 20px; margin-bottom: 20px;text-align: center; display: block; margin-left: auto; margin-right: auto;">
-        <h1 style="text-align: center;">Portal de autenticación</h1>
-        <h2 style="font-weight: 3; font-size: large;text-align: center;">Sistema de Reservas - ESPE</h2>
-        <h3 style="font-weight: 3; font-size: medium;text-align: center;">Acceso restringido a personal autorizado</h3>
-        <br>
-        <form action="/pages/Reserva/Reserva.html" method="get" >
-            <label for="correo" style="text-align: center; ">Correo Electrónico:</label>
-            <br>
-            <input type="email" id="correo" name="correo" placeholder="usuario@espe.edu.ec" required style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 50%;" >
+<body style="margin:0; padding:0;">
+
+    <main
+        style="background-color:white; width:400px; margin:60px auto; border-radius:24px; padding:40px; box-shadow:0 10px 25px rgba(0,0,0,0.15);">
+
+        <img src="img/Logo2.png" alt="Logo ESPE" style="width:110px; display:block; margin:auto; margin-bottom:25px;">
+
+        <h1 style="text-align:center; color:#0F172A; margin-bottom:10px; font-size:28px;">
+            Portal de Autenticación
+        </h1>
+        
+        <h2 style="text-align:center; font-size:17px; color:#475569; font-weight:500; margin-top:0;">
+            Sistema de Reservas - ESPE
+        </h2>
+
+        <p style="text-align:center; color:#64748B; font-size:14px; margin-bottom:35px;">
+            Acceso restringido a personal autorizado
+        </p>
+
+
+        <form action="pages/Reserva/Reserva.html" method="get">
+            <label for="correo" style="font-size:14px; color:#334155; font-weight:600;">
+                Correo Electrónico
+            </label>
             <br><br>
-            <label for="contraseña" style="text-align: center; ">Contraseña:</label>
-            <br>
-            <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y tener 8 o más caracteres" required style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 50%;" >
+            <input type="email" id="correo" name="correo" placeholder="usuario@espe.edu.ec" required
+                style="width:100%; padding:14px; border:1px solid #CBD5E1; border-radius:12px; font-size:14px; box-sizing:border-box;">
+            <br><br><br>
+            <label for="contrasena" style="font-size:14px; color:#334155; font-weight:600;">
+                Contraseña
+            </label>
             <br><br>
-            <input type="submit" value="Iniciar Seción" style="background-color: blue; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;margin-right: 0;margin-left: 36%;">
+            <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y tener mínimo 8 caracteres"
+                required
+                style="width:100%; padding:14px; border:1px solid #CBD5E1; border-radius:12px; font-size:14px; box-sizing:border-box;">
+            <br><br><br>
+            <input type="submit" value="Iniciar Sesión"
+                style="width:100%; background-color:#155DFC; color:white; border:none; border-radius:12px; padding:14px; font-size:15px; font-weight:600; cursor:pointer;">
         </form>
-        <br>
-        <p style="text-align: center;color: blue;">¿Olvidaste tu contraseña?</p>
-        <footer style="text-align: center; font-size: 12px;">Universidad de las Fuerzas Armadas "ESPE"
-            <p>Santo Domingo - Ecuador</p>
+
+
+        <p style="text-align:center; color:#155DFC; margin-top:25px; font-size:14px; cursor:pointer;">
+            ¿Olvidaste tu contraseña?
+        </p>
+
+
+        <hr style="border:none; border-top:1px solid #E2E8F0; margin:30px 0;">
+
+
+        <footer style="text-align:center; color:#64748B; font-size:12px;">
+
+            Universidad de las Fuerzas Armadas "ESPE"
+
+            <p style="margin-top:8px;">
+                Santo Domingo - Ecuador
+            </p>
+
         </footer>
+
     </main>
+
 </body>
 
 </html>
