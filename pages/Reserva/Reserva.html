@@ -35,7 +35,7 @@
 
         <form action="../../index.html">
 
-            <button
+            <button title="Cerrar Sesión"
                 style="background-color:white; border:1px solid #CBD5E1; padding:10px 18px; border-radius:12px; cursor:pointer; color:#334155; font-size:14px;">
 
                 <i class="fa-solid fa-right-from-bracket"></i>
@@ -46,6 +46,48 @@
         </form>
 
     </header>
+    <section
+        style="background-color:white; padding:15px; border-radius:16px; margin-bottom: 35px;">
+
+        <h2>Preguntas Frecuentes</h2>
+        <details style="margin-top:10px; font-size:14px; color:#475569; max-width:600px;">
+            <summary>
+                ¿Cómo puedo reservar un laboratorio?
+            </summary>
+            <p style="margin-top:8px;">
+                Para reservar un laboratorio, simplemente haz clic en el botón "Reservar" del laboratorio que deseas y sigue las instrucciones para confirmar tu reserva.
+            </p>
+        </details>
+        <details style="margin-top:10px; font-size:14px; color:#475569; max-width:500px;">
+            <summary >
+                ¿Que problemas resuelve EspeLab ?
+            </summary>
+            <p style="margin-top:8px;">
+                EspeLab resuelve el problema de la gestión manual de reservas de laboratorios.
+        </details>
+        <details style="margin-top:10px; font-size:14px; color:#475569; max-width:600px;">
+            <summary >
+                ¿Qué debo hacer si tengo problemas para reservar?
+            </summary>
+            <p style="margin-top:8px;">
+                Si tienes problemas para reservar, puedes contactar al soporte técnico a través del correo
+                <a href="mailto:soporte@espe.edu.ec" style="color:#155DFC; text-decoration:underline;"> 
+                    soporte@espe.edu.ec
+                </a>
+            </p>
+        </details>  
+    </section>
+    <section
+        style="background-color:white; padding:15px; border-radius:16px; margin-bottom: 35px;">
+
+        <h2>Porcentaje de laboratiorios</h2>
+        <progress title="20%" value="20" max="100" style="accent-color: #155DFC; width:100%; height: 40px; ">
+            20%
+        </progress>
+         <p style="margin-top:8px; font-size:14px; color:#475569;">
+            Actualmente, el 20% de los laboratorios están reservados.
+        </p>
+    </section>
 
 
     <nav
@@ -60,6 +102,7 @@
         </a>
 
         <a href="../Disponibles/Disponibles.html"
+            title="Disponibles"
             style="text-decoration:none; background-color:#EEF2FF; color:#334155; padding:11px 22px; border-radius:10px; font-size:14px;">
 
             <i class="fa-solid fa-door-open" style="color:#2ECC71;"></i>
@@ -68,6 +111,7 @@
         </a>
 
         <a href="../Ocupados/Ocupados.html"
+            title="Ocupados"
             style="text-decoration:none; background-color:#EEF2FF; color:#334155; padding:11px 22px; border-radius:10px; font-size:14px;">
 
             <i class="fa-solid fa-door-closed" style="color:#E74C3C;"></i>
@@ -119,26 +163,32 @@
                 </section>
 
                 <p style="margin-top:24px; font-size:14px; color:#475569;">
-                    Capacidad: <strong>30 estaciones</strong>
+                    Capacidad: 
+                    <strong>30 estaciones</strong>
+                    
                 </p>
 
                 <hr style="border:none; border-top:1px solid #E2E8F0; margin:22px 0;">
 
                 <footer style="display:flex; justify-content:space-between; align-items:center;">
 
-                    <span
+                    <span title="Disponible"
                         style="background:#DCFCE7; color:#166534; padding:8px 16px; border-radius:8px; font-size:12px; font-weight:700;">
                         DISPONIBLE
                     </span>
 
                     <form action="../confirmacion/confirmacion.html">
 
-                        <button
+                        <button title="Reservar"
                             style="background:#155DFC; color:white; border:none; padding:11px 20px; border-radius:10px; cursor:pointer; font-size:14px;">
                             Reservar
                         </button>
-
                     </form>
+                    <a title="Ver Ubicación"
+                        href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" style="text-decoration:none; color:#155DFC; font-weight:600;">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ver Ubicación
+                    </a>
 
                 </footer>
 
@@ -191,7 +241,7 @@
 
                 <footer style="display:flex; justify-content:space-between; align-items:center;">
 
-                    <span
+                    <span title="Ocupado"
                         style="background:#FEE2E2; color:#991B1B; padding:8px 16px; border-radius:8px; font-size:12px; font-weight:700;">
                         OCUPADO
                     </span>
@@ -200,7 +250,11 @@
                         style="background:#CBD5E1; color:#64748B; border:none; padding:11px 20px; border-radius:10px; font-size:14px;">
                         Reservado
                     </button>
-
+                    <a title="Ver Ubicación"
+                        href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" style="text-decoration:none; color:#155DFC; font-weight:600;">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ver Ubicación
+                    </a>
                 </footer>
 
             </section>
@@ -250,20 +304,25 @@
                 <hr style="border:none; border-top:1px solid #E2E8F0; margin:22px 0;">
 
                 <footer style="display:flex; justify-content:space-between; align-items:center;">
-
-                    <span
+                    
+                    <span title="Disponible"
                         style="background:#DCFCE7; color:#166534; padding:8px 16px; border-radius:8px; font-size:12px; font-weight:700;">
                         DISPONIBLE
                     </span>
 
                     <form action="../confirmacion/confirmacion.html">
 
-                        <button
+                        <button title="Reservar"
                             style="background:#155DFC; color:white; border:none; padding:11px 20px; border-radius:10px; cursor:pointer; font-size:14px;">
                             Reservar
                         </button>
 
                     </form>
+                    <a title="Ver Ubicación"
+                        href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" style="text-decoration:none; color:#155DFC; font-weight:600;">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ver Ubicación
+                    </a>
 
                 </footer>
 
@@ -316,19 +375,24 @@
 
                 <footer style="display:flex; justify-content:space-between; align-items:center;">
 
-                    <span
+                    <span title="Disponible"
                         style="background:#DCFCE7; color:#166534; padding:8px 16px; border-radius:8px; font-size:12px; font-weight:700;">
                         DISPONIBLE
                     </span>
 
                     <form action="../confirmacion/confirmacion.html">
 
-                        <button
+                        <button title="Reservar"
                             style="background:#155DFC; color:white; border:none; padding:11px 20px; border-radius:10px; cursor:pointer; font-size:14px;">
                             Reservar
                         </button>
 
                     </form>
+                    <a title="Ver Ubicación"
+                        href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" style="text-decoration:none; color:#155DFC; font-weight:600;">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ver Ubicación
+                    </a>
 
                 </footer>
 
@@ -337,6 +401,10 @@
         </article>
 
     </main>
+    <footer style="text-align:center; margin-top:35px; color:#64748B; font-size:12px;">
+        Universidad de las Fuerzas Armadas "ESPE" - Santo Domingo, Ecuador
+        
+    </footer>
 
 </body>
 
