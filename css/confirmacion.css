@@ -1,0 +1,218 @@
+/* ============================================================
+   CONFIRMACION.CSS
+   Estilos específicos para la página de Confirmación de Reserva.
+   ============================================================ */
+
+/* ============================================================
+   BLOQUE 1: FONDO Y CENTRADO DE LA PÁGINA
+   ============================================================ */
+
+html {
+    background-color: #DCFCE7;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ============================================================
+   BLOQUE 2: TARJETA DE CONFIRMACIÓN
+   ============================================================ */
+
+#confirmacion-card {
+    width: 380px;
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================================================
+   BLOQUE 3: CABECERA VERDE DE CONFIRMACIÓN
+   ============================================================ */
+
+#confirmacion-card > header {
+    background: #00B63E;
+    padding: 35px 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    display: block;
+    margin-bottom: 0;
+}
+
+.btn-cerrar-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-cerrar-modal:hover {
+    background: rgba(255, 255, 255, 0.35);
+    text-decoration: none;
+}
+
+.icono-check {
+    display: block;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    margin: auto;
+    font-size: 38px;
+    text-align: center;
+}
+
+#confirmacion-card > header h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+#confirmacion-card > header p {
+    margin: 0;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================================
+   BLOQUE 4: CUERPO CON DATOS DE LA RESERVA
+   ============================================================ */
+
+#confirmacion-card article {
+    padding: 30px;
+}
+
+.etiqueta-dato {
+    font-size: 12px;
+    color: #64748B;
+    margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.valor-dato {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 20px;
+    color: #0F172A;
+    font-weight: 600;
+}
+
+.subtexto-dato {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #475569;
+    font-size: 14px;
+}
+
+/* ============================================================
+   BLOQUE 5: TABLA DE FECHA/HORA Y QR
+   ============================================================ */
+
+#tabla-reserva {
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    overflow: hidden;
+    border-collapse: separate;
+}
+
+#tabla-reserva td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+.label-tabla {
+    font-size: 12px;
+    color: #64748B;
+    margin-bottom: 5px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.valor-tabla {
+    font-size: 15px;
+    color: #0F172A;
+}
+
+.texto-qr {
+    color: #475569;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+
+figure.qr-figure {
+    margin: 0;
+    display: inline-block;
+}
+
+figure.qr-figure img {
+    border: 5px solid #00B63E;
+    border-radius: 20px;
+    padding: 10px;
+    background: white;
+}
+
+/* ============================================================
+   BLOQUE 6: BOTONES DE ACCIÓN
+   ============================================================ */
+
+.btn-entendido {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #00B63E;
+    color: white;
+    padding: 15px;
+    border-radius: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.btn-entendido:hover {
+    background: #008F30;
+    text-decoration: none;
+}
+
+.btn-descargar {
+    width: 100%;
+    background: #E5E7EB;
+    border: none;
+    padding: 15px;
+    border-radius: 14px;
+    color: #334155;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-descargar:hover {
+    background: #d1d5db;
+}
+
+/* ============================================================
+   BLOQUE 7: FOOTER DE CONFIRMACIÓN
+   ============================================================ */
+
+#confirmacion-card footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #64748B;
+    font-size: 11px;
+}

@@ -1,75 +1,53 @@
 <!DOCTYPE html>
-<html lang="es"
-    style="background-color:#155DFC; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0;">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>Inicio de Sesión</title>
-    <link rel="icon" href="icon/Logon_theapplication_2961.ico"  type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" >
+    <link rel="icon" href="icon/Logon_theapplication_2961.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body style="margin:0; padding:0;">
+<body>
 
-    <main
-        style="background-color:white; width:400px; margin:60px auto; border-radius:24px; padding:40px; box-shadow:0 10px 25px rgba(0,0,0,0.15);">
+    <main id="login-card">
 
-        <img src="img/Logo2.png" alt="Logo ESPE" style="width:110px; display:block; margin:auto; margin-bottom:25px;">
+        <img src="img/Logo2.png" alt="Logo ESPE">
 
-        <h1 style="text-align:center; color:#0F172A; margin-bottom:10px; font-size:28px;">
-            Portal de Autenticación
-        </h1>
-        
-        <h2 style="text-align:center; font-size:17px; color:#475569; font-weight:500; margin-top:0;">
-            Sistema de Reservas - ESPE
-        </h2>
+        <h1>Portal de Autenticación</h1>
 
-        <p style="text-align:center; color:#64748B; font-size:14px; margin-bottom:35px;">
-            Acceso restringido a personal autorizado
-        </p>
+        <h2>Sistema de Reservas - ESPE</h2>
 
+        <p>Acceso restringido a personal autorizado</p>
 
-        <form action="pages/Reserva/Reserva.html" method="post">
-            <label for="correo" style="font-size:14px; color:#334155; font-weight:600;">
-                Correo Electrónico
-            </label>
+        <form class="formulario-login" action="pages/Reserva/Reserva.html" method="post">
+            <label for="correo">Correo Electrónico</label>
             <br><br>
-            <input type="email" id="correo" name="correo" placeholder="usuario@espe.edu.ec" required
-                style="width:100%; padding:14px; border:1px solid #CBD5E1; border-radius:12px; font-size:14px; box-sizing:border-box;">
+            <input type="email" id="correo" name="correo" placeholder="usuario@espe.edu.ec" required>
             <br><br><br>
-            <label for="contrasena" style="font-size:14px; color:#334155; font-weight:600;">
-                Contraseña
-            </label>
+            <label for="contrasena">Contraseña</label>
             <br><br>
             <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y tener mínimo 8 caracteres"
-                required
-                style="width:100%; padding:14px; border:1px solid #CBD5E1; border-radius:12px; font-size:14px; box-sizing:border-box;">
+                required>
             <br><br><br>
-            <input title="Inicia Sesión" type="submit" value="Iniciar Sesión"
-                style="width:100%; background-color:#155DFC; color:white; border:none; border-radius:12px; padding:14px; font-size:15px; font-weight:600; cursor:pointer;">
+            <input class="btn-ingresar" title="Inicia Sesión" type="submit" value="Iniciar Sesión">
         </form>
 
-
-        <p style="text-align:center; color:#155DFC; margin-top:25px; font-size:14px; cursor:pointer;">
-            <a title="Recuperar Contraseña" href="pages/RecuperarContrasena/RecuperarContrasena.html" style="text-decoration:underline;">
+        <p class="enlace-recuperar">
+            <a title="Recuperar Contraseña" href="pages/RecuperarContrasena/RecuperarContrasena.html">
                 ¿Olvidaste tu contraseña?
             </a>
         </p>
 
+        <hr>
 
-        <hr style="border:none; border-top:1px solid #E2E8F0; margin:30px 0;">
-
-
-        <footer style="text-align:center; color:#64748B; font-size:12px;">
-
+        <footer>
             Universidad de las Fuerzas Armadas "ESPE"
-
-            <p style="margin-top:8px;">
-                Santo Domingo - Ecuador
-            </p>
-
+            <p>Santo Domingo - Ecuador</p>
         </footer>
 
     </main>

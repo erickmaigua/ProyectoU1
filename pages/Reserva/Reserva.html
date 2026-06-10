@@ -1,409 +1,201 @@
 <!DOCTYPE html>
-<html lang="es"
-    style="background-color:#F1F5F9; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0;">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>Reserva de Laboratorios</title>
-
     <link rel="icon" href="../../icon/Computer_PC_Monitor_1906.ico" type="image/x-icon">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/reserva.css">
 </head>
 
-<body style="margin:0; padding:25px 40px; color:#334155;">
+<body>
 
-    <header style="display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;">
+    <header>
 
         <section style="display:flex; align-items:center; gap:15px;">
-
             <img src="../../img/Logo.png" width="65" alt="Logo ESPE">
-
             <article>
-
-                <h1 style="margin:0; font-size:25px; color:#0F172A;">
-                    Reserva de Laboratorios
-                </h1>
-
-                <p style="margin-top:5px; color:#64748B; font-size:13px;">
-                    Sistema Académico ESPE Santo Domingo
-                </p>
-
+                <h1>Reserva de Laboratorios</h1>
+                <p>Sistema Académico ESPE Santo Domingo</p>
             </article>
-
         </section>
 
         <form action="../../index.html">
-
-            <button title="Cerrar Sesión"
-                style="background-color:white; border:1px solid #CBD5E1; padding:10px 18px; border-radius:12px; cursor:pointer; color:#334155; font-size:14px;">
-
+            <button title="Cerrar Sesión" class="btn-cerrar-sesion">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 Cerrar sesión
-
             </button>
-
         </form>
 
     </header>
-    <section
-        style="background-color:white; padding:15px; border-radius:16px; margin-bottom: 35px;">
 
+    <section id="preguntas-frecuentes">
         <h2>Preguntas Frecuentes</h2>
-        <details style="margin-top:10px; font-size:14px; color:#475569; max-width:600px;">
-            <summary>
-                ¿Cómo puedo reservar un laboratorio?
-            </summary>
-            <p style="margin-top:8px;">
-                Para reservar un laboratorio, simplemente haz clic en el botón "Reservar" del laboratorio que deseas y sigue las instrucciones para confirmar tu reserva.
+
+        <details>
+            <summary>¿Cómo puedo reservar un laboratorio?</summary>
+            <p>Para reservar un laboratorio, simplemente haz clic en el botón "Reservar" del laboratorio que deseas y sigue las instrucciones para confirmar tu reserva.</p>
+        </details>
+
+        <details>
+            <summary>¿Qué problemas resuelve EspeLab?</summary>
+            <p>EspeLab resuelve el problema de la gestión manual de reservas de laboratorios.</p>
+        </details>
+
+        <details>
+            <summary>¿Qué debo hacer si tengo problemas para reservar?</summary>
+            <p>Si tienes problemas para reservar, puedes contactar al soporte técnico a través del correo
+                <a href="mailto:soporte@espe.edu.ec">soporte@espe.edu.ec</a>
             </p>
         </details>
-        <details style="margin-top:10px; font-size:14px; color:#475569; max-width:500px;">
-            <summary >
-                ¿Que problemas resuelve EspeLab ?
-            </summary>
-            <p style="margin-top:8px;">
-                EspeLab resuelve el problema de la gestión manual de reservas de laboratorios.
-        </details>
-        <details style="margin-top:10px; font-size:14px; color:#475569; max-width:600px;">
-            <summary >
-                ¿Qué debo hacer si tengo problemas para reservar?
-            </summary>
-            <p style="margin-top:8px;">
-                Si tienes problemas para reservar, puedes contactar al soporte técnico a través del correo
-                <a href="mailto:soporte@espe.edu.ec" style="color:#155DFC; text-decoration:underline;"> 
-                    soporte@espe.edu.ec
-                </a>
-            </p>
-        </details>  
-    </section>
-    <section
-        style="background-color:white; padding:15px; border-radius:16px; margin-bottom: 35px;">
-
-        <h2>Porcentaje de laboratiorios</h2>
-        <progress title="20%" value="20" max="100" style="accent-color: #155DFC; width:100%; height: 40px; ">
-            20%
-        </progress>
-         <p style="margin-top:8px; font-size:14px; color:#475569;">
-            Actualmente, el 20% de los laboratorios están reservados.
-        </p>
     </section>
 
+    <section id="porcentaje-labs">
+        <h2>Porcentaje de laboratorios</h2>
+        <progress title="20%" value="20" max="100">20%</progress>
+        <p>Actualmente, el 20% de los laboratorios están reservados.</p>
+    </section>
 
-    <nav
-        style="background-color:white; padding:15px; border-radius:16px; display:flex; gap:15px; margin-bottom:35px; box-shadow:0 3px 6px rgba(0,0,0,0.05);">
-
-        <a href="../Reserva/Reserva.html"
-            style="text-decoration:none; background-color:#155DFC; color:white; padding:11px 22px; border-radius:10px; font-size:14px; font-weight:600;">
-
+    <nav>
+        <a href="../Reserva/Reserva.html" class="activo">
             <i class="fa-solid fa-border-all"></i>
             Todos
-
         </a>
-
-        <a href="../Disponibles/Disponibles.html"
-            title="Disponibles"
-            style="text-decoration:none; background-color:#EEF2FF; color:#334155; padding:11px 22px; border-radius:10px; font-size:14px;">
-
+        <a href="../Disponibles/Disponibles.html" title="Disponibles">
             <i class="fa-solid fa-door-open" style="color:#2ECC71;"></i>
             Disponibles
-
         </a>
-
-        <a href="../Ocupados/Ocupados.html"
-            title="Ocupados"
-            style="text-decoration:none; background-color:#EEF2FF; color:#334155; padding:11px 22px; border-radius:10px; font-size:14px;">
-
+        <a href="../Ocupados/Ocupados.html" title="Ocupados">
             <i class="fa-solid fa-door-closed" style="color:#E74C3C;"></i>
             Ocupados
-
         </a>
-
     </nav>
 
+    <main id="grilla-labs">
 
-    <main style="display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:25px;">
-
-
-        <article
-            style="background-color:white; border-radius:20px; overflow:hidden;">
-
-            <header style="background:linear-gradient(135deg,#155DFC,#0A3A9C); padding:24px; color:white;">
-
-                <h2 style="margin:0; font-size:19px;">
-                    Laboratorio de Cómputo 1
-                </h2>
-
-                <p style="margin-top:8px; font-size:13px;">
-                    Bloque A
-                </p>
-
+        <article class="tarjeta">
+            <header>
+                <h2>Laboratorio de Cómputo 1</h2>
+                <p>Bloque A</p>
             </header>
-
-            <section style="padding:24px;">
-
-                <h3 style="font-size:13px; color:#64748B;">
-                    Software Disponible
-                </h3>
-
-                <section style="display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;">
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">MATLAB</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">AutoCAD</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">VS Code</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">PyCharm</span>
-
-                </section>
-
+            <section>
+                <h3>Software Disponible</h3>
+                <div class="lista-software">
+                    <span class="tag-software">MATLAB</span>
+                    <span class="tag-software">AutoCAD</span>
+                    <span class="tag-software">VS Code</span>
+                    <span class="tag-software">PyCharm</span>
+                </div>
                 <p style="margin-top:24px; font-size:14px; color:#475569;">
-                    Capacidad: 
-                    <strong>30 estaciones</strong>
-                    
+                    Capacidad: <strong>30 estaciones</strong>
                 </p>
-
-                <hr style="border:none; border-top:1px solid #E2E8F0; margin:22px 0;">
-
-                <footer style="display:flex; justify-content:space-between; align-items:center;">
-
-                    <span title="Disponible"
-                        style="background:#DCFCE7; color:#166534; padding:8px 16px; border-radius:8px; font-size:12px; font-weight:700;">
-                        DISPONIBLE
-                    </span>
-
+                <hr>
+                <footer>
+                    <span title="Disponible" class="badge-disponible">DISPONIBLE</span>
                     <form action="../confirmacion/confirmacion.html">
-
-                        <button title="Reservar"
-                            style="background:#155DFC; color:white; border:none; padding:11px 20px; border-radius:10px; cursor:pointer; font-size:14px;">
-                            Reservar
-                        </button>
+                        <button title="Reservar" class="btn-reservar">Reservar</button>
                     </form>
-                    <a title="Ver Ubicación"
-                        href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" style="text-decoration:none; color:#155DFC; font-weight:600;">
+                    <a title="Ver Ubicación" href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
                         <i class="fa-solid fa-location-dot"></i>
                         Ver Ubicación
                     </a>
-
                 </footer>
-
             </section>
-
         </article>
 
-
-
-        <article
-            style="background-color:white; border-radius:20px; overflow:hidden;">
-
-            <header style="background:linear-gradient(135deg,#155DFC,#0A3A9C); padding:24px; color:white;">
-
-                <h2 style="margin:0; font-size:19px;">
-                    Laboratorio de Redes
-                </h2>
-
-                <p style="margin-top:8px; font-size:13px;">
-                    Bloque B
-                </p>
-
+        <article class="tarjeta">
+            <header>
+                <h2>Laboratorio de Redes</h2>
+                <p>Bloque B</p>
             </header>
-
-            <section style="padding:24px;">
-
-                <h3 style="font-size:13px; color:#64748B;">
-                    Software Disponible
-                </h3>
-
-                <section style="display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;">
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">Packet
-                        Tracer</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">Wireshark</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">GNS3</span>
-
-                </section>
-
+            <section>
+                <h3>Software Disponible</h3>
+                <div class="lista-software">
+                    <span class="tag-software">Packet Tracer</span>
+                    <span class="tag-software">Wireshark</span>
+                    <span class="tag-software">GNS3</span>
+                </div>
                 <p style="margin-top:24px; font-size:14px; color:#475569;">
                     Capacidad: <strong>25 estaciones</strong>
                 </p>
-
-                <hr style="border:none; border-top:1px solid #E2E8F0; margin:22px 0;">
-
-                <footer style="display:flex; justify-content:space-between; align-items:center;">
-
-                    <span title="Ocupado"
-                        style="background:#FEE2E2; color:#991B1B; padding:8px 16px; border-radius:8px; font-size:12px; font-weight:700;">
-                        OCUPADO
-                    </span>
-
-                    <button disabled
-                        style="background:#CBD5E1; color:#64748B; border:none; padding:11px 20px; border-radius:10px; font-size:14px;">
-                        Reservado
-                    </button>
-                    <a title="Ver Ubicación"
-                        href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" style="text-decoration:none; color:#155DFC; font-weight:600;">
+                <hr>
+                <footer>
+                    <span title="Ocupado" class="badge-ocupado">OCUPADO</span>
+                    <button disabled class="btn-reservado">Reservado</button>
+                    <a title="Ver Ubicación" href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
                         <i class="fa-solid fa-location-dot"></i>
                         Ver Ubicación
                     </a>
                 </footer>
-
             </section>
-
         </article>
 
-
-
-        <article
-            style="background-color:white; border-radius:20px; overflow:hidden; box-shadow:0 6px 12px rgba(0,0,0,0.05);">
-
-            <header style="background:linear-gradient(135deg,#155DFC,#0A3A9C); padding:24px; color:white;">
-
-                <h2 style="margin:0; font-size:19px;">
-                    Laboratorio de Desarrollo Web
-                </h2>
-
-                <p style="margin-top:8px; font-size:13px;">
-                    Bloque C
-                </p>
-
+        <article class="tarjeta">
+            <header>
+                <h2>Laboratorio de Desarrollo Web</h2>
+                <p>Bloque C</p>
             </header>
-
-            <section style="padding:24px;">
-
-                <h3 style="font-size:13px; color:#64748B;">
-                    Software Disponible
-                </h3>
-
-                <section style="display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;">
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">React</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">Node.js</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">Figma</span>
-
-                </section>
-
+            <section>
+                <h3>Software Disponible</h3>
+                <div class="lista-software">
+                    <span class="tag-software">React</span>
+                    <span class="tag-software">Node.js</span>
+                    <span class="tag-software">Figma</span>
+                </div>
                 <p style="margin-top:24px; font-size:14px; color:#475569;">
                     Capacidad: <strong>24 estaciones</strong>
                 </p>
-
-                <hr style="border:none; border-top:1px solid #E2E8F0; margin:22px 0;">
-
-                <footer style="display:flex; justify-content:space-between; align-items:center;">
-                    
-                    <span title="Disponible"
-                        style="background:#DCFCE7; color:#166534; padding:8px 16px; border-radius:8px; font-size:12px; font-weight:700;">
-                        DISPONIBLE
-                    </span>
-
+                <hr>
+                <footer>
+                    <span title="Disponible" class="badge-disponible">DISPONIBLE</span>
                     <form action="../confirmacion/confirmacion.html">
-
-                        <button title="Reservar"
-                            style="background:#155DFC; color:white; border:none; padding:11px 20px; border-radius:10px; cursor:pointer; font-size:14px;">
-                            Reservar
-                        </button>
-
+                        <button title="Reservar" class="btn-reservar">Reservar</button>
                     </form>
-                    <a title="Ver Ubicación"
-                        href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" style="text-decoration:none; color:#155DFC; font-weight:600;">
+                    <a title="Ver Ubicación" href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
                         <i class="fa-solid fa-location-dot"></i>
                         Ver Ubicación
                     </a>
-
                 </footer>
-
             </section>
-
         </article>
 
-
-
-        <article
-            style="background-color:white; border-radius:20px; overflow:hidden; box-shadow:0 6px 12px rgba(0,0,0,0.05);">
-
-            <header style="background:linear-gradient(135deg,#155DFC,#0A3A9C); padding:24px; color:white;">
-
-                <h2 style="margin:0; font-size:19px;">
-                    Laboratorio de Electrónica
-                </h2>
-
-                <p style="margin-top:8px; font-size:13px;">
-                    Bloque D
-                </p>
-
+        <article class="tarjeta">
+            <header>
+                <h2>Laboratorio de Electrónica</h2>
+                <p>Bloque D</p>
             </header>
-
-            <section style="padding:24px;">
-
-                <h3 style="font-size:13px; color:#64748B;">
-                    Software Disponible
-                </h3>
-
-                <section style="display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;">
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">Proteus</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">MATLAB</span>
-
-                    <span
-                        style="background:#F1F5F9; padding:7px 12px; border-radius:8px; font-size:12px;">Arduino
-                        IDE</span>
-
-                </section>
-
+            <section>
+                <h3>Software Disponible</h3>
+                <div class="lista-software">
+                    <span class="tag-software">Proteus</span>
+                    <span class="tag-software">MATLAB</span>
+                    <span class="tag-software">Arduino IDE</span>
+                </div>
                 <p style="margin-top:24px; font-size:14px; color:#475569;">
                     Capacidad: <strong>20 estaciones</strong>
                 </p>
-
-                <hr style="border:none; border-top:1px solid #E2E8F0; margin:22px 0;">
-
-                <footer style="display:flex; justify-content:space-between; align-items:center;">
-
-                    <span title="Disponible"
-                        style="background:#DCFCE7; color:#166534; padding:8px 16px; border-radius:8px; font-size:12px; font-weight:700;">
-                        DISPONIBLE
-                    </span>
-
+                <hr>
+                <footer>
+                    <span title="Disponible" class="badge-disponible">DISPONIBLE</span>
                     <form action="../confirmacion/confirmacion.html">
-
-                        <button title="Reservar"
-                            style="background:#155DFC; color:white; border:none; padding:11px 20px; border-radius:10px; cursor:pointer; font-size:14px;">
-                            Reservar
-                        </button>
-
+                        <button title="Reservar" class="btn-reservar">Reservar</button>
                     </form>
-                    <a title="Ver Ubicación"
-                        href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" style="text-decoration:none; color:#155DFC; font-weight:600;">
+                    <a title="Ver Ubicación" href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
                         <i class="fa-solid fa-location-dot"></i>
                         Ver Ubicación
                     </a>
-
                 </footer>
-
             </section>
-
         </article>
 
     </main>
-    <footer style="text-align:center; margin-top:35px; color:#64748B; font-size:12px;">
-        Universidad de las Fuerzas Armadas "ESPE" - Santo Domingo, Ecuador
-        
+
+    <footer id="pie-pagina">
+        &copy; Espelab - Sistema de Reserva de Laboratorios
+        <br><br>
+        &copy; Universidad de las Fuerzas Armadas "ESPE" - Santo Domingo, Ecuador
     </footer>
 
 </body>

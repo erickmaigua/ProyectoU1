@@ -1,102 +1,80 @@
 <!DOCTYPE html>
-<html lang="es"
-    style="background-color:#DCFCE7; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0;">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>Confirmación de Reserva</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/confirmacion.css">
 </head>
 
-<body style="display:flex; justify-content:center; align-items:center; min-height:100vh;">
-    <main
-        style="width:380px; background:white; border-radius:28px; overflow:hidden; box-shadow:0 15px 30px rgba(0,0,0,0.12);">
-        <header style="background:#00B63E; padding:35px 30px; text-align:center; color:white; position:relative;">
-            <a href="../Reserva/Reserva.html"
-                style="position:absolute; top:20px; right:20px; text-decoration:none; background:rgba(255,255,255,0.2); width:35px; height:35px; border-radius:50%; line-height:35px; color:white; font-size:22px;">
-                ×
-            </a>
-            <span
-                style="display:block; width:75px; height:75px; line-height:75px; border-radius:50%; background:rgba(255,255,255,0.2); margin:auto; font-size:38px;">
-                <i class="fa-solid fa-check" style="color:white;"></i>
+<body>
+
+    <main id="confirmacion-card">
+
+        <header>
+            <a href="../Reserva/Reserva.html" class="btn-cerrar-modal">×</a>
+            <span class="icono-check">
+                <i class="fa-solid fa-check"></i>
             </span>
-            <h1 style="margin-top:20px; margin-bottom:10px; font-size:30px;">
-                ¡Reserva Confirmada!
-            </h1>
-            <p style="margin:0; font-size:15px;">
-                Tu pase digital está listo
-            </p>
+            <h1>¡Reserva Confirmada!</h1>
+            <p>Tu pase digital está listo</p>
         </header>
-        <article style="padding:30px;">
-            <h2 style="font-size:12px; color:#64748B; margin-bottom:5px;">
-                ESTUDIANTE
-            </h2>
-            <p style="margin-top:0; margin-bottom:22px; font-size:20px; color:#0F172A; font-weight:600;">
-                Juan Pérez
-            </p>
-            <h2 style="font-size:12px; color:#64748B; margin-bottom:5px;">
-                LABORATORIO
-            </h2>
-            <p style="margin-top:0; margin-bottom:5px; font-size:20px; color:#0F172A; font-weight:600;">
-                Laboratorio de Cómputo 1
-            </p>
-            <p style="margin-top:0; margin-bottom:25px; color:#475569; font-size:14px;">
-                Bloque A
-            </p>
-            <table style="width:100%; margin-bottom:25px;" border="1">
+
+        <article>
+
+            <h2 class="etiqueta-dato">ESTUDIANTE</h2>
+            <p class="valor-dato">Juan Pérez</p>
+
+            <h2 class="etiqueta-dato">LABORATORIO</h2>
+            <p class="valor-dato">Laboratorio de Cómputo 1</p>
+            <p class="subtexto-dato">Bloque A</p>
+
+            <table id="tabla-reserva" border="1">
                 <tr>
                     <td>
-                        <h3
-                            style="font-size:12px; color:#64748B; margin-bottom:5px; font-family:sans-serif; margin-top:0;">
-                            FECHA
-                        </h3>
-                        <strong style="font-size:15px; color:#0F172A; font-family:sans-serif;">
-                            15 de Mayo, 2026
-                        </strong>
+                        <h3 class="label-tabla">FECHA</h3>
+                        <strong class="valor-tabla">15 de Mayo, 2026</strong>
                     </td>
                     <td>
-                        <h3
-                            style="font-size:12px; color:#64748B; margin-bottom:5px; font-family:sans-serif; margin-top:0;">
-                            HORA
-                        </h3>
-                        <strong style="font-size:15px; color:#0F172A; font-family:sans-serif;">
-                            14:00 - 16:00
-                        </strong>
+                        <h3 class="label-tabla">HORA</h3>
+                        <strong class="valor-tabla">14:00 - 16:00</strong>
                     </td>
                 </tr>
-
                 <tr>
                     <td colspan="2">
-                        <hr style="border:none; border-top:1px solid #E2E8F0; margin:25px 0;">
+                        <hr>
                     </td>
                 </tr>
-
                 <tr>
                     <td colspan="2" style="text-align:center;">
-                        <p style="color:#475569; font-size:14px; font-family:sans-serif; margin:0 0 25px 0;">
-                            Escanea este código para ingresar al laboratorio
-                        </p>
-                        <figure style="margin:0; display:inline-block;">
-                            <img src="../../img/qr.png" alt="Código QR" width="210"
-                                style="border:5px solid #00B63E; border-radius:20px; padding:10px; background:white;">
+                        <p class="texto-qr">Escanea este código para ingresar al laboratorio</p>
+                        <figure class="qr-figure">
+                            <img src="../../img/qr.png" alt="Código QR" width="210">
                         </figure>
                     </td>
                 </tr>
             </table>
-            <hr style="border:none; border-top:1px solid #E2E8F0; margin:25px 0;">
-            <a href="../Reserva/Reserva.html" title="Entendido"
-                style="display:block; text-align:center; text-decoration:none; background:#00B63E; color:white; padding:15px; border-radius:14px; font-weight:600; margin-bottom:15px;">
+
+            <hr>
+
+            <a href="../Reserva/Reserva.html" title="Entendido" class="btn-entendido">
                 Entendido
             </a>
-            <button title="Descargar pase"
-                style="width:100%; background:#E5E7EB; border:none; padding:15px; border-radius:14px; color:#334155; font-size:15px; cursor:pointer;">
+
+            <button title="Descargar pase" class="btn-descargar">
                 Descargar Pase
             </button>
-            <footer style="text-align:center; margin-top:20px; color:#64748B; font-size:11px;">
+
+            <footer>
                 Presenta este código QR al ingresar al laboratorio
             </footer>
+
         </article>
+
     </main>
+
 </body>
 
 </html>

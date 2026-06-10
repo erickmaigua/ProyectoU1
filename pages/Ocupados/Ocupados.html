@@ -1,128 +1,76 @@
 <!DOCTYPE html>
-<html lang="es"
-    style="background-color:#F1F5F9; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0;">
+<html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
     <title>Laboratorios Ocupados</title>
-
     <link rel="icon" href="../../icon/Computer_PC_Monitor_1906.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/ocupados.css">
 </head>
 
-<body style="margin:0; padding:25px 40px; color:#334155;">
+<body>
 
-    <header style="display:flex; justify-content:space-between; align-items:center; margin-bottom:35px;">
+    <header>
 
-        <figure style="display:flex; align-items:center; gap:15px; margin:0;">
-
+        <figure>
             <img src="../../img/Logo.png" alt="Logo ESPE" width="70">
-
             <figcaption>
-
-                <h1 style="margin:0; font-size:26px; color:#0F172A;">
-                    Laboratorios Ocupados
-                </h1>
-
-                <p style="margin-top:5px; color:#64748B; font-size:13px;">
-                    Sistema Académico ESPE Santo Domingo
-                </p>
-
+                <h1>Laboratorios Ocupados</h1>
+                <p>Sistema Académico ESPE Santo Domingo</p>
             </figcaption>
-
         </figure>
 
-
         <form action="../../index.html">
-
-            <button
-                style="background:white; border:1px solid #CBD5E1; padding:11px 20px; border-radius:12px; cursor:pointer; color:#334155; font-size:14px;">
+            <button class="btn-cerrar-sesion">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 Cerrar sesión
             </button>
-
         </form>
 
     </header>
 
-
-
-    <nav
-        style="background:white; padding:16px; border-radius:18px; display:flex; gap:15px; margin-bottom:35px; box-shadow:0 3px 8px rgba(0,0,0,0.05);">
-
-        <a href="../Reserva/Reserva.html"
-            style="text-decoration:none; background:#EEF2FF; color:#334155; padding:11px 24px; border-radius:10px; font-size:14px;">
+    <nav>
+        <a href="../Reserva/Reserva.html">
             <i class="fa-solid fa-border-all"></i>
             Todos
         </a>
-
-        <a href="../Disponibles/Disponibles.html"
-            style="text-decoration:none; background:#EEF2FF; color:#334155; padding:11px 24px; border-radius:10px; font-size:14px;">
-            <i class="fa-solid fa-door-open" style="color: #2ecc71;"></i>
+        <a href="../Disponibles/Disponibles.html">
+            <i class="fa-solid fa-door-open" style="color:#2ecc71;"></i>
             Disponibles
         </a>
-
-        <a href="../Ocupados/Ocupados.html"
-            style="text-decoration:none; background:#155DFC; color:white; padding:11px 24px; border-radius:10px; font-size:14px; font-weight:600;">
-            <i class="fa-solid fa-door-closed" style="color: #E74C3C;"></i>
+        <a href="../Ocupados/Ocupados.html" class="activo">
+            <i class="fa-solid fa-door-closed" style="color:#E74C3C;"></i>
             Ocupados
         </a>
-
     </nav>
 
-    <main style="display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:28px;">
-        <article style="background:white; border-radius:22px; overflow:hidden; box-shadow:0 6px 12px rgba(0,0,0,0.05);">
+    <main id="grilla-ocupados">
 
-            <header style="background:linear-gradient(135deg,#155DFC,#0A3A9C); padding:22px; color:white;">
-
-                <h2 style="margin:0; font-size:22px;">
-                    Laboratorio de Redes
-                </h2>
-
-                <p style="margin-top:8px; font-size:13px;">
-                    Bloque B
-                </p>
-
+        <article class="tarjeta ocupado">
+            <header>
+                <h2>Laboratorio de Redes</h2>
+                <p>Bloque B</p>
             </header>
-            <section style="padding:24px;">
-                <h3 style="font-size:13px; color:#64748B; margin-bottom:14px;">
-                    Software Disponible
-                </h3>
-                <ul style="display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:0;">
-
-                    <li style="background:#F1F5F9; padding:7px 14px; border-radius:8px; font-size:12px;">
-                        Packet Tracer
-                    </li>
-
-                    <li style="background:#F1F5F9; padding:7px 14px; border-radius:8px; font-size:12px;">
-                        Wireshark
-                    </li>
-
-                    <li style="background:#F1F5F9; padding:7px 14px; border-radius:8px; font-size:12px;">
-                        GNS3
-                    </li>
-
+            <section>
+                <h3>Software Disponible</h3>
+                <ul class="lista-software-ul">
+                    <li>Packet Tracer</li>
+                    <li>Wireshark</li>
+                    <li>GNS3</li>
                 </ul>
-                <p style="margin-top:24px; color:#475569;">
-                    Capacidad: <strong>25 estaciones</strong>
-                </p>
-                <hr style="border:none; border-top:1px solid #E2E8F0; margin:24px 0;">
-                <footer style="display:flex; justify-content:space-between; align-items:center;">
-                    <span
-                        style="background:#FEE2E2; color:#991B1B; padding:8px 18px; border-radius:8px; font-size:12px; font-weight:700;">
-                        
-                        OCUPADO
-                    </span>
-                    <button disabled
-                        style="background:#CBD5E1; color:#64748B; border:none; padding:11px 20px; border-radius:10px;">
-                        Reservado
-                    </button>
+                <p class="capacidad">Capacidad: <strong>25 estaciones</strong></p>
+                <hr>
+                <footer>
+                    <span class="badge-ocupado">OCUPADO</span>
+                    <button class="btn-reservado" disabled>Reservado</button>
                 </footer>
             </section>
         </article>
+
     </main>
+
 </body>
 
 </html>

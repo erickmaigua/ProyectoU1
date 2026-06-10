@@ -1,0 +1,140 @@
+/* ============================================================
+   INDEX.CSS
+   Estilos específicos para la página de inicio de sesión.
+   ============================================================ */
+
+/* ============================================================
+   BLOQUE 1: FONDO DE PÁGINA DE LOGIN
+   Color azul institucional como fondo.
+   ============================================================ */
+
+html {
+    background-color: #155DFC;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================================
+   BLOQUE 2: CONTENEDOR PRINCIPAL (TARJETA DE LOGIN)
+   Caja blanca centrada con sombra.
+   ============================================================ */
+
+#login-card {
+    background-color: white;
+    width: 400px;
+    margin: 60px auto;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================
+   BLOQUE 3: LOGO Y ENCABEZADO DEL LOGIN
+   ============================================================ */
+
+#login-card img {
+    width: 110px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#login-card h1 {
+    text-align: center;
+    color: #0F172A;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+#login-card h2 {
+    text-align: center;
+    font-size: 17px;
+    color: #475569;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#login-card > p {
+    text-align: center;
+    color: #64748B;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* ============================================================
+   BLOQUE 4: FORMULARIO DE LOGIN
+   Campos y etiquetas del formulario de autenticación.
+   ============================================================ */
+
+.formulario-login label {
+    font-size: 14px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.formulario-login input[type="email"],
+.formulario-login input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.formulario-login input[type="email"]:focus,
+.formulario-login input[type="password"]:focus {
+    outline: none;
+    border-color: #155DFC;
+    box-shadow: 0 0 0 3px rgba(21, 93, 252, 0.15);
+}
+
+.btn-ingresar {
+    width: 100%;
+    background-color: #155DFC;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-ingresar:hover {
+    background-color: #0A3A9C;
+}
+
+/* ============================================================
+   BLOQUE 5: ENLACE Y FOOTER DEL LOGIN
+   ============================================================ */
+
+.enlace-recuperar {
+    text-align: center;
+    color: #155DFC;
+    margin-top: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.enlace-recuperar a {
+    text-decoration: underline;
+    color: #155DFC;
+}
+
+#login-card hr {
+    margin: 30px 0;
+}
+
+#login-card footer {
+    text-align: center;
+    color: #64748B;
+    font-size: 12px;
+}
+
+#login-card footer p {
+    margin-top: 8px;
+}

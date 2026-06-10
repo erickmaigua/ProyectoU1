@@ -1,0 +1,54 @@
+/* ============================================================
+   DISPONIBLES.CSS
+   Estilos específicos para la página de Laboratorios Disponibles.
+   ============================================================ */
+
+/* ============================================================
+   BLOQUE 1: LAYOUT GENERAL DE LA PÁGINA
+   ============================================================ */
+
+body {
+    padding: 25px 40px;
+}
+
+/* ============================================================
+   BLOQUE 2: GRILLA DE TARJETAS DISPONIBLES
+   Grid con columnas responsive.
+   ============================================================ */
+
+#grilla-disponibles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+}
+
+/* ============================================================
+   BLOQUE 3: LISTA DE SOFTWARE (ul/li)
+   Estilo para la lista de software dentro de cada tarjeta.
+   ============================================================ */
+
+.lista-software-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-software-ul li {
+    background: #F1F5F9;
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* ============================================================
+   BLOQUE 4: CAPACIDAD
+   ============================================================ */
+
+.capacidad {
+    margin-top: 24px;
+    color: #475569;
+    font-size: 14px;
+}
