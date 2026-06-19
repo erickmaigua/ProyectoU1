@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EspeLab - Confirmación de Reserva</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../../css/general.css">
+  <link rel="stylesheet" href="../../css/confirmacion.css">
+</head>
+
+<body>
+
+  <main id="confirmacion-card">
+
+    <header>
+      <a href="../Reserva/Reserva.html" class="btn-cerrar-modal">×</a>
+      <span class="icono-check">
+        <i class="fa-solid fa-check"></i>
+      </span>
+      <h1>¡Reserva Confirmada!</h1>
+      <p>Tu pase digital está listo</p>
+    </header>
+
+    <article>
+
+      <h2 class="etiqueta-dato">ESTUDIANTE</h2>
+      <p class="valor-dato">Juan Pérez</p>
+
+      <h2 class="etiqueta-dato">LABORATORIO</h2>
+      <p class="valor-dato">Laboratorio de Cómputo 1</p>
+      <p class="subtexto-dato">Bloque A</p>
+
+      <table id="tabla-reserva">
+        <tr>
+          <td>
+            <h3 class="label-tabla">FECHA</h3>
+            <strong class="valor-tabla">15 de Mayo, 2026</strong>
+          </td>
+          <td>
+            <h3 class="label-tabla">HORA</h3>
+            <strong class="valor-tabla">14:00 – 16:00</strong>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><hr></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="celda-qr">
+            <p class="texto-qr">Escanea este código para ingresar al laboratorio</p>
+            <figure class="qr-figure">
+              <img src="../../img/qr.png" alt="Código QR" width="210">
+            </figure>
+          </td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <a href="../Reserva/Reserva.html" title="Entendido" class="btn-entendido">
+        Entendido
+      </a>
+
+      <button title="Descargar pase" class="btn-descargar">
+        <i class="fa-solid fa-download"></i> Descargar Pase
+      </button>
+
+      <footer>
+        Presenta este código QR al ingresar al laboratorio
+      </footer>
+
+    </article>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+{
+  "sistema": "EspeLab - Sistema de Reservas de Laboratorios",
+  "institucion": "Universidad de las Fuerzas Armadas ESPE",
+  "sede": "Santo Domingo, Ecuador",
+  "laboratorios": [
+    {
+      "id": 1,
+      "nombre": "Laboratorio de Cómputo 1",
+      "bloque": "Bloque A",
+      "capacidad": 30,
+      "estado": "disponible",
+      "software": ["MATLAB", "AutoCAD", "VS Code", "PyCharm"],
+      "ubicacion": "https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9",
+      "imagen": "img/lab-computo.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Laboratorio de Redes",
+      "bloque": "Bloque B",
+      "capacidad": 25,
+      "estado": "ocupado",
+      "software": ["Packet Tracer", "Wireshark", "GNS3"],
+      "ubicacion": "https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9",
+      "imagen": "img/lab-redes.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Laboratorio de Desarrollo Web",
+      "bloque": "Bloque C",
+      "capacidad": 24,
+      "estado": "disponible",
+      "software": ["React", "Node.js", "Figma"],
+      "ubicacion": "https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9",
+      "imagen": "img/lab-web.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Laboratorio de Electrónica",
+      "bloque": "Bloque D",
+      "capacidad": 20,
+      "estado": "disponible",
+      "software": ["Proteus", "MATLAB", "Arduino IDE"],
+      "ubicacion": "https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9",
+      "imagen": "img/lab-electronica.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Laboratorio de Software",
+      "bloque": "Bloque A",
+      "capacidad": 28,
+      "estado": "disponible",
+      "software": ["VS Code", "Docker", "IntelliJ"],
+      "ubicacion": "https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9",
+      "imagen": "img/lab-software.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Laboratorio Multimedia",
+      "bloque": "Bloque B",
+      "capacidad": 20,
+      "estado": "disponible",
+      "software": ["Photoshop", "Premiere", "Canva"],
+      "ubicacion": "https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9",
+      "imagen": "img/lab-multimedia.jpg"
+    }
+  ],
+  "reservas": [
+    {
+      "id": 101,
+      "id_laboratorio": 2,
+      "estudiante": {
+        "nombre": "Juan Pérez",
+        "correo": "j.perez@espe.edu.ec",
+        "cedula": "1712345678"
+      },
+      "fecha": "2026-05-15",
+      "hora_inicio": "14:00",
+      "hora_fin": "16:00",
+      "estado": "confirmada",
+      "codigo_qr": "img/qr.png"
+    }
+  ],
+  "estadisticas": {
+    "total_laboratorios": 6,
+    "disponibles": 5,
+    "ocupados": 1,
+    "porcentaje_ocupacion": 17
+  }
+}

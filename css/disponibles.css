@@ -1,0 +1,60 @@
+/* ============================================================
+   DISPONIBLES.CSS
+   Estilos específicos — Laboratorios Disponibles.
+   Mobile-First.
+   ============================================================ */
+
+/* BLOQUE 1: LAYOUT */
+
+body {
+  padding: 0;
+}
+
+/* BLOQUE 2: GRILLA — Mobile: 1 columna, Tablet: 2, Desktop: 3 */
+
+#grilla-disponibles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* BLOQUE 3: LISTA DE SOFTWARE */
+
+.lista-software-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.lista-software-ul li {
+  background: #F1F5F9;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #334155;
+}
+
+/* BLOQUE 4: CAPACIDAD */
+
+.capacidad {
+  margin-top: 20px;
+  color: #475569;
+  font-size: 14px;
+}
+
+/* BLOQUE 5: MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  #grilla-disponibles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  #grilla-disponibles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

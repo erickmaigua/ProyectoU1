@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EspeLab - Inicio de Sesión</title>
+  <link rel="icon" href="icon/Logon_theapplication_2961.ico" type="image/x-icon">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS propios -->
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <main id="login-card">
+
+    <img src="img/Logo2.png" alt="Logo ESPE" class="logo-espe">
+
+    <h1>Portal de Autenticación</h1>
+    <h2>Sistema de Reservas - ESPE</h2>
+    <p class="subtitulo-login">Acceso restringido a personal autorizado</p>
+
+    <!-- Alerta Bootstrap de bienvenida -->
+    <div class="alert alert-info alert-dismissible fade show alerta-info-login" role="alert">
+      <i class="fa-solid fa-circle-info"></i>
+      Use su correo institucional <strong>@espe.edu.ec</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <form class="formulario-login" action="pages/Reserva/Reserva.html" method="get">
+      <label for="correo">Correo Electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="usuario@espe.edu.ec" required>
+
+      <label for="contrasena">Contraseña</label>
+      <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Debe contener al menos un número, una letra mayúscula, una letra minúscula y tener mínimo 8 caracteres"
+        required>
+
+      <input class="btn-ingresar" title="Inicia Sesión" type="submit" value="Iniciar Sesión">
+    </form>
+
+    <p class="enlace-recuperar">
+      <a title="Recuperar Contraseña" href="#">
+        ¿Olvidaste tu contraseña?
+      </a>
+    </p>
+
+    <hr>
+
+    <footer>
+      Universidad de las Fuerzas Armadas "ESPE"
+      <p>Santo Domingo - Ecuador</p>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<espelab>
+
+  <sistema>EspeLab - Sistema de Reservas de Laboratorios</sistema>
+  <institucion>Universidad de las Fuerzas Armadas ESPE</institucion>
+  <sede>Santo Domingo, Ecuador</sede>
+
+  <laboratorios>
+
+    <laboratorio>
+      <id>1</id>
+      <nombre>Laboratorio de Cómputo 1</nombre>
+      <bloque>Bloque A</bloque>
+      <capacidad>30</capacidad>
+      <estado>disponible</estado>
+      <software>
+        <programa>MATLAB</programa>
+        <programa>AutoCAD</programa>
+        <programa>VS Code</programa>
+        <programa>PyCharm</programa>
+      </software>
+      <ubicacion>https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9</ubicacion>
+      <imagen>img/lab-computo.jpg</imagen>
+    </laboratorio>
+
+    <laboratorio>
+      <id>2</id>
+      <nombre>Laboratorio de Redes</nombre>
+      <bloque>Bloque B</bloque>
+      <capacidad>25</capacidad>
+      <estado>ocupado</estado>
+      <software>
+        <programa>Packet Tracer</programa>
+        <programa>Wireshark</programa>
+        <programa>GNS3</programa>
+      </software>
+      <ubicacion>https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9</ubicacion>
+      <imagen>img/lab-redes.jpg</imagen>
+    </laboratorio>
+
+    <laboratorio>
+      <id>3</id>
+      <nombre>Laboratorio de Desarrollo Web</nombre>
+      <bloque>Bloque C</bloque>
+      <capacidad>24</capacidad>
+      <estado>disponible</estado>
+      <software>
+        <programa>React</programa>
+        <programa>Node.js</programa>
+        <programa>Figma</programa>
+      </software>
+      <ubicacion>https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9</ubicacion>
+      <imagen>img/lab-web.jpg</imagen>
+    </laboratorio>
+
+    <laboratorio>
+      <id>4</id>
+      <nombre>Laboratorio de Electrónica</nombre>
+      <bloque>Bloque D</bloque>
+      <capacidad>20</capacidad>
+      <estado>disponible</estado>
+      <software>
+        <programa>Proteus</programa>
+        <programa>MATLAB</programa>
+        <programa>Arduino IDE</programa>
+      </software>
+      <ubicacion>https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9</ubicacion>
+      <imagen>img/lab-electronica.jpg</imagen>
+    </laboratorio>
+
+    <laboratorio>
+      <id>5</id>
+      <nombre>Laboratorio de Software</nombre>
+      <bloque>Bloque A</bloque>
+      <capacidad>28</capacidad>
+      <estado>disponible</estado>
+      <software>
+        <programa>VS Code</programa>
+        <programa>Docker</programa>
+        <programa>IntelliJ</programa>
+      </software>
+      <ubicacion>https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9</ubicacion>
+      <imagen>img/lab-software.jpg</imagen>
+    </laboratorio>
+
+    <laboratorio>
+      <id>6</id>
+      <nombre>Laboratorio Multimedia</nombre>
+      <bloque>Bloque B</bloque>
+      <capacidad>20</capacidad>
+      <estado>disponible</estado>
+      <software>
+        <programa>Photoshop</programa>
+        <programa>Premiere</programa>
+        <programa>Canva</programa>
+      </software>
+      <ubicacion>https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9</ubicacion>
+      <imagen>img/lab-multimedia.jpg</imagen>
+    </laboratorio>
+
+  </laboratorios>
+
+  <reservas>
+
+    <reserva>
+      <id>101</id>
+      <id_laboratorio>2</id_laboratorio>
+      <estudiante>
+        <nombre>Juan Pérez</nombre>
+        <correo>j.perez@espe.edu.ec</correo>
+        <cedula>1712345678</cedula>
+      </estudiante>
+      <fecha>2026-05-15</fecha>
+      <hora_inicio>14:00</hora_inicio>
+      <hora_fin>16:00</hora_fin>
+      <estado>confirmada</estado>
+      <codigo_qr>img/qr.png</codigo_qr>
+    </reserva>
+
+  </reservas>
+
+  <estadisticas>
+    <total_laboratorios>6</total_laboratorios>
+    <disponibles>5</disponibles>
+    <ocupados>1</ocupados>
+    <porcentaje_ocupacion>17</porcentaje_ocupacion>
+  </estadisticas>
+
+</espelab>

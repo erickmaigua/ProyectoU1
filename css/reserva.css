@@ -1,0 +1,230 @@
+/* ============================================================
+   RESERVA.CSS
+   Estilos específicos para la página de Reserva.
+   Mobile-First.
+   ============================================================ */
+
+/* BLOQUE 1: LAYOUT */
+
+body {
+  padding: 0;
+}
+
+/* BLOQUE 2: CARRUSEL PERSONALIZADO */
+
+.seccion-carrusel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.slide-lab {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+.slide-1 { background: linear-gradient(135deg, #155DFC 0%, #0A3A9C 100%); }
+.slide-2 { background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%); }
+.slide-3 { background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%); }
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.carousel-caption h3 {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.carousel-caption p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
+  margin: 0;
+}
+
+/* BLOQUE 3: ESTADÍSTICAS */
+
+.seccion-estadisticas {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.fila-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: center;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-numero {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #64748B;
+}
+
+.badge-stat {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.texto-verde { color: #16a34a; }
+.texto-rojo { color: #dc2626; }
+
+/* BLOQUE 4: BARRA DE PROGRESO */
+
+#porcentaje-labs {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+#porcentaje-labs h2 {
+  font-size: 16px;
+  color: #0F172A;
+  margin-bottom: 12px;
+}
+
+.barra-progreso {
+  height: 18px;
+  border-radius: 10px;
+  background: #F1F5F9;
+  margin-bottom: 10px;
+}
+
+.barra-progreso .progress-bar {
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#porcentaje-labs p {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* BLOQUE 5: ACCORDION PERSONALIZADO */
+
+#preguntas-frecuentes {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  border-left: 5px solid #155DFC;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+#preguntas-frecuentes h2 {
+  font-size: 16px;
+  color: #0F172A;
+  margin-bottom: 14px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.accordion-espe .accordion-item {
+  border: 1px solid #E2E8F0;
+  border-radius: 10px !important;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.accordion-espe .accordion-button {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  background: #F8FAFC;
+  border-radius: 10px !important;
+}
+
+.accordion-espe .accordion-button:not(.collapsed) {
+  background: #EEF2FF;
+  color: #155DFC;
+  box-shadow: none;
+}
+
+.accordion-espe .accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-espe .accordion-body {
+  font-size: 14px;
+  color: #475569;
+  padding: 14px 16px;
+}
+
+/* BLOQUE 6: GRILLA DE LABORATORIOS */
+
+#grilla-labs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* BLOQUE 7: MEDIA QUERIES — TABLET */
+
+@media (min-width: 768px) {
+  .slide-lab {
+    height: 260px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 15px;
+  }
+
+  #grilla-labs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-numero {
+    font-size: 38px;
+  }
+}
+
+/* BLOQUE 8: MEDIA QUERIES — ESCRITORIO */
+
+@media (min-width: 992px) {
+  .slide-lab {
+    height: 300px;
+  }
+
+  #grilla-labs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  #grilla-labs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

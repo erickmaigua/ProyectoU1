@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EspeLab - Reserva de Laboratorios</title>
+  <link rel="icon" href="../../icon/Computer_PC_Monitor_1906.ico" type="image/x-icon">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS propios -->
+  <link rel="stylesheet" href="../../css/general.css">
+  <link rel="stylesheet" href="../../css/reserva.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR BOOTSTRAP ===== -->
+  <nav class="navbar navbar-expand-lg navbar-espe">
+    <div class="container-fluid px-4">
+
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="../../img/Logo.png" alt="Logo ESPE" class="logo-nav">
+        <span class="nombre-sistema">EspeLab</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+          <li class="nav-item">
+            <a class="nav-link nav-pill activo" href="Reserva.html">
+              <i class="fa-solid fa-border-all"></i> Todos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-pill" href="../Disponibles/Disponibles.html">
+              <i class="fa-solid fa-door-open icono-disponible"></i> Disponibles
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-pill" href="../Ocupados/Ocupados.html">
+              <i class="fa-solid fa-door-closed icono-ocupado"></i> Ocupados
+            </a>
+          </li>
+        </ul>
+        <form action="../../index.html">
+          <button class="btn-cerrar-sesion">
+            <i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="contenido-pagina">
+
+    <!-- ===== CARRUSEL BOOTSTRAP ===== -->
+    <section class="seccion-carrusel mb-4">
+      <div id="carruselLabs" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carruselLabs" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carruselLabs" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carruselLabs" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slide-lab slide-1">
+              <div class="carousel-caption">
+                <h3>Laboratorio de Cómputo 1</h3>
+                <p>30 estaciones · Bloque A · <span class="badge bg-success">DISPONIBLE</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-lab slide-2">
+              <div class="carousel-caption">
+                <h3>Laboratorio de Desarrollo Web</h3>
+                <p>24 estaciones · Bloque C · <span class="badge bg-success">DISPONIBLE</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-lab slide-3">
+              <div class="carousel-caption">
+                <h3>Laboratorio de Electrónica</h3>
+                <p>20 estaciones · Bloque D · <span class="badge bg-success">DISPONIBLE</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselLabs" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselLabs" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== ESTADÍSTICAS (Badges Bootstrap) ===== -->
+    <section class="seccion-estadisticas mb-4">
+      <div class="fila-stats">
+        <div class="stat-card">
+          <span class="stat-numero">6</span>
+          <span class="stat-label">Total laboratorios</span>
+          <span class="badge bg-secondary badge-stat">Total</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-numero texto-verde">5</span>
+          <span class="stat-label">Disponibles</span>
+          <span class="badge bg-success badge-stat">Disponibles</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-numero texto-rojo">1</span>
+          <span class="stat-label">Ocupados</span>
+          <span class="badge bg-danger badge-stat">Ocupados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROGRESO ===== -->
+    <section id="porcentaje-labs" class="mb-4">
+      <h2>Porcentaje de ocupación</h2>
+      <div class="progress barra-progreso" role="progressbar" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-primary" style="width: 17%">17%</div>
+      </div>
+      <p>Actualmente el <strong>17%</strong> de los laboratorios están reservados.</p>
+    </section>
+
+    <!-- ===== PREGUNTAS FRECUENTES (Accordion Bootstrap) ===== -->
+    <section id="preguntas-frecuentes" class="mb-4">
+      <h2><i class="fa-solid fa-circle-question"></i> Preguntas Frecuentes</h2>
+      <div class="accordion accordion-espe" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              ¿Cómo puedo reservar un laboratorio?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Haz clic en el botón <strong>Reservar</strong> del laboratorio que deseas y sigue las instrucciones para confirmar tu reserva.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              ¿Qué problemas resuelve EspeLab?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              EspeLab digitaliza la gestión de reservas de laboratorios, eliminando filas y conflictos de horario en la asignación de espacios académicos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              ¿Qué hago si tengo problemas para reservar?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Contacta al soporte técnico en <a href="mailto:soporte@espe.edu.ec">soporte@espe.edu.ec</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GRILLA DE LABORATORIOS ===== -->
+    <section class="mb-4">
+      <h2 class="titulo-seccion">Todos los Laboratorios</h2>
+      <div id="grilla-labs">
+
+        <!-- Tarjeta 1 -->
+        <article class="tarjeta">
+          <header>
+            <h2>Laboratorio de Cómputo 1</h2>
+            <p>Bloque A</p>
+          </header>
+          <section>
+            <h3>Software Disponible</h3>
+            <div class="lista-software">
+              <span class="tag-software">MATLAB</span>
+              <span class="tag-software">AutoCAD</span>
+              <span class="tag-software">VS Code</span>
+              <span class="tag-software">PyCharm</span>
+            </div>
+            <p class="capacidad-lab">Capacidad: <strong>30 estaciones</strong></p>
+            <hr>
+            <footer>
+              <span class="badge-disponible">DISPONIBLE</span>
+              <div class="acciones-tarjeta">
+                <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                  Reservar
+                </button>
+                <a href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
+                  <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="tarjeta">
+          <header>
+            <h2>Laboratorio de Redes</h2>
+            <p>Bloque B</p>
+          </header>
+          <section>
+            <h3>Software Disponible</h3>
+            <div class="lista-software">
+              <span class="tag-software">Packet Tracer</span>
+              <span class="tag-software">Wireshark</span>
+              <span class="tag-software">GNS3</span>
+            </div>
+            <p class="capacidad-lab">Capacidad: <strong>25 estaciones</strong></p>
+            <hr>
+            <footer>
+              <span class="badge-ocupado">OCUPADO</span>
+              <div class="acciones-tarjeta">
+                <button disabled class="btn-reservado">Reservado</button>
+                <a href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
+                  <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="tarjeta">
+          <header>
+            <h2>Laboratorio de Desarrollo Web</h2>
+            <p>Bloque C</p>
+          </header>
+          <section>
+            <h3>Software Disponible</h3>
+            <div class="lista-software">
+              <span class="tag-software">React</span>
+              <span class="tag-software">Node.js</span>
+              <span class="tag-software">Figma</span>
+            </div>
+            <p class="capacidad-lab">Capacidad: <strong>24 estaciones</strong></p>
+            <hr>
+            <footer>
+              <span class="badge-disponible">DISPONIBLE</span>
+              <div class="acciones-tarjeta">
+                <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                  Reservar
+                </button>
+                <a href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
+                  <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
+
+        <!-- Tarjeta 4 -->
+        <article class="tarjeta">
+          <header>
+            <h2>Laboratorio de Electrónica</h2>
+            <p>Bloque D</p>
+          </header>
+          <section>
+            <h3>Software Disponible</h3>
+            <div class="lista-software">
+              <span class="tag-software">Proteus</span>
+              <span class="tag-software">MATLAB</span>
+              <span class="tag-software">Arduino IDE</span>
+            </div>
+            <p class="capacidad-lab">Capacidad: <strong>20 estaciones</strong></p>
+            <hr>
+            <footer>
+              <span class="badge-disponible">DISPONIBLE</span>
+              <div class="acciones-tarjeta">
+                <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                  Reservar
+                </button>
+                <a href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
+                  <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== MODAL BOOTSTRAP DE RESERVA ===== -->
+    <div class="modal fade" id="modalReserva" tabindex="-1" aria-labelledby="modalReservaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-espe">
+          <div class="modal-header modal-header-espe">
+            <h5 class="modal-title" id="modalReservaLabel">
+              <i class="fa-solid fa-calendar-check"></i> Confirmar Reserva
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="modal-lab-nombre">¿Deseas confirmar tu reserva?</p>
+            <p class="modal-lab-bloque">Selecciona fecha y hora de uso</p>
+            <hr>
+            <div class="modal-form-grupo">
+              <label>Fecha de reserva</label>
+              <input type="date" class="modal-input" id="modalFecha">
+            </div>
+            <div class="modal-form-grupo">
+              <label>Hora inicio</label>
+              <input type="time" class="modal-input" id="modalHoraInicio">
+            </div>
+            <div class="modal-form-grupo">
+              <label>Hora fin</label>
+              <input type="time" class="modal-input" id="modalHoraFin">
+            </div>
+          </div>
+          <div class="modal-footer modal-footer-espe">
+            <button type="button" class="btn-modal-cancelar" data-bs-dismiss="modal">Cancelar</button>
+            <a href="../confirmacion/confirmacion.html" class="btn-modal-confirmar">
+              <i class="fa-solid fa-check"></i> Confirmar Reserva
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="pie-pagina">
+      &copy; EspeLab — Sistema de Reservas de Laboratorios<br>
+      Universidad de las Fuerzas Armadas "ESPE" — Santo Domingo, Ecuador
+    </footer>
+
+  </div><!-- fin contenido-pagina -->
+
+  
+</body>
+
+</html>

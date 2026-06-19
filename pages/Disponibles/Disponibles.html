@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EspeLab - Laboratorios Disponibles</title>
+  <link rel="icon" href="../../icon/Computer_PC_Monitor_1906.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../../css/general.css">
+  <link rel="stylesheet" href="../../css/disponibles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-espe">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="../../img/Logo.png" alt="Logo ESPE" class="logo-nav">
+        <span class="nombre-sistema">EspeLab</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+          <li class="nav-item">
+            <a class="nav-link nav-pill" href="../Reserva/Reserva.html">
+              <i class="fa-solid fa-border-all"></i> Todos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-pill activo" href="Disponibles.html">
+              <i class="fa-solid fa-door-open icono-disponible"></i> Disponibles
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-pill" href="../Ocupados/Ocupados.html">
+              <i class="fa-solid fa-door-closed icono-ocupado"></i> Ocupados
+            </a>
+          </li>
+        </ul>
+        <form action="../../index.html">
+          <button class="btn-cerrar-sesion">
+            <i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="contenido-pagina">
+
+    <!-- Alerta Bootstrap informativa -->
+    <div class="alert alert-success alerta-disponibles d-flex align-items-center" role="alert">
+      <i class="fa-solid fa-circle-check me-2"></i>
+      <span>Mostrando <strong>laboratorios disponibles</strong> para reserva inmediata.</span>
+    </div>
+
+    <h1 class="titulo-pagina">Laboratorios Disponibles</h1>
+
+    <main id="grilla-disponibles">
+
+      <article class="tarjeta">
+        <header>
+          <h2>Laboratorio de Software</h2>
+          <p>Bloque A</p>
+        </header>
+        <section>
+          <h3>Software Disponible</h3>
+          <ul class="lista-software-ul">
+            <li>VS Code</li>
+            <li>Docker</li>
+            <li>IntelliJ</li>
+          </ul>
+          <p class="capacidad">Capacidad: <strong>28 estaciones</strong></p>
+          <hr>
+          <footer>
+            <span class="badge-disponible">DISPONIBLE</span>
+            <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReservaDisp"
+             >
+              Reservar
+            </button>
+          </footer>
+        </section>
+      </article>
+
+      <article class="tarjeta">
+        <header>
+          <h2>Laboratorio Multimedia</h2>
+          <p>Bloque B</p>
+        </header>
+        <section>
+          <h3>Software Disponible</h3>
+          <ul class="lista-software-ul">
+            <li>Photoshop</li>
+            <li>Premiere</li>
+            <li>Canva</li>
+          </ul>
+          <p class="capacidad">Capacidad: <strong>20 estaciones</strong></p>
+          <hr>
+          <footer>
+            <span class="badge-disponible">DISPONIBLE</span>
+            <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReservaDisp"
+             >
+              Reservar
+            </button>
+          </footer>
+        </section>
+      </article>
+
+      <article class="tarjeta">
+        <header>
+          <h2>Laboratorio Web</h2>
+          <p>Bloque C</p>
+        </header>
+        <section>
+          <h3>Software Disponible</h3>
+          <ul class="lista-software-ul">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Bootstrap</li>
+          </ul>
+          <p class="capacidad">Capacidad: <strong>24 estaciones</strong></p>
+          <hr>
+          <footer>
+            <span class="badge-disponible">DISPONIBLE</span>
+            <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReservaDisp"
+             >
+              Reservar
+            </button>
+          </footer>
+        </section>
+      </article>
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalReservaDisp" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-espe">
+          <div class="modal-header modal-header-espe">
+            <h5 class="modal-title">
+              <i class="fa-solid fa-calendar-check"></i> Confirmar Reserva
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="modal-lab-nombre">¿Deseas confirmar tu reserva?</p>
+            <p class="modal-lab-bloque">Selecciona fecha y hora de uso</p>
+            <hr>
+            <div class="modal-form-grupo">
+              <label>Fecha</label>
+              <input type="date" class="modal-input">
+            </div>
+            <div class="modal-form-grupo">
+              <label>Hora inicio</label>
+              <input type="time" class="modal-input">
+            </div>
+            <div class="modal-form-grupo">
+              <label>Hora fin</label>
+              <input type="time" class="modal-input">
+            </div>
+          </div>
+          <div class="modal-footer modal-footer-espe">
+            <button type="button" class="btn-modal-cancelar" data-bs-dismiss="modal">Cancelar</button>
+            <a href="../confirmacion/confirmacion.html" class="btn-modal-confirmar">
+              <i class="fa-solid fa-check"></i> Confirmar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="pie-pagina">
+      &copy; EspeLab — Sistema de Reservas de Laboratorios<br>
+      Universidad de las Fuerzas Armadas "ESPE" — Santo Domingo, Ecuador
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
