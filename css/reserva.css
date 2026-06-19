@@ -228,3 +228,15 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+#carruselLabs .carousel-item img {
+    height: 450px;
+    object-fit: cover;
+}
+
+#carruselLabs .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}

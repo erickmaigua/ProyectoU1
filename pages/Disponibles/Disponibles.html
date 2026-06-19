@@ -63,114 +63,134 @@
 
     <main id="grilla-disponibles">
 
-      <article class="tarjeta">
-        <header>
-          <h2>Laboratorio de Software</h2>
-          <p>Bloque A</p>
-        </header>
-        <section>
-          <h3>Software Disponible</h3>
-          <ul class="lista-software-ul">
-            <li>VS Code</li>
-            <li>Docker</li>
-            <li>IntelliJ</li>
-          </ul>
-          <p class="capacidad">Capacidad: <strong>28 estaciones</strong></p>
-          <hr>
-          <footer>
-            <span class="badge-disponible">DISPONIBLE</span>
-            <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReservaDisp"
-             >
-              Reservar
-            </button>
-          </footer>
-        </section>
-      </article>
+       <article class="tarjeta">
+          <header>
+            <h2>Laboratorio de Cómputo 1</h2>
+            <p>Bloque A</p>
+          </header>
+          <section>
+            <h3>Software Disponible</h3>
+            <div class="lista-software">
+              <span class="tag-software">MATLAB</span>
+              <span class="tag-software">AutoCAD</span>
+              <span class="tag-software">VS Code</span>
+              <span class="tag-software">PyCharm</span>
+            </div>
+            <p class="capacidad-lab">Capacidad: <strong>30 estaciones</strong></p>
+            <hr>
+            <footer>
+              <span class="badge-disponible">DISPONIBLE</span>
+              <div class="acciones-tarjeta">
+                <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                  Reservar
+                </button>
+                <a href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
+                  <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
+
 
       <article class="tarjeta">
-        <header>
-          <h2>Laboratorio Multimedia</h2>
-          <p>Bloque B</p>
-        </header>
-        <section>
-          <h3>Software Disponible</h3>
-          <ul class="lista-software-ul">
-            <li>Photoshop</li>
-            <li>Premiere</li>
-            <li>Canva</li>
-          </ul>
-          <p class="capacidad">Capacidad: <strong>20 estaciones</strong></p>
-          <hr>
-          <footer>
-            <span class="badge-disponible">DISPONIBLE</span>
-            <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReservaDisp"
-             >
-              Reservar
-            </button>
-          </footer>
-        </section>
-      </article>
+          <header>
+            <h2>Laboratorio de Desarrollo Web</h2>
+            <p>Bloque C</p>
+          </header>
+          <section>
+            <h3>Software Disponible</h3>
+            <div class="lista-software">
+              <span class="tag-software">React</span>
+              <span class="tag-software">Node.js</span>
+              <span class="tag-software">Figma</span>
+            </div>
+            <p class="capacidad-lab">Capacidad: <strong>24 estaciones</strong></p>
+            <hr>
+            <footer>
+              <span class="badge-disponible">DISPONIBLE</span>
+              <div class="acciones-tarjeta">
+                <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                  Reservar
+                </button>
+                <a href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
+                  <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
 
       <article class="tarjeta">
-        <header>
-          <h2>Laboratorio Web</h2>
-          <p>Bloque C</p>
-        </header>
-        <section>
-          <h3>Software Disponible</h3>
-          <ul class="lista-software-ul">
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Bootstrap</li>
-          </ul>
-          <p class="capacidad">Capacidad: <strong>24 estaciones</strong></p>
-          <hr>
-          <footer>
-            <span class="badge-disponible">DISPONIBLE</span>
-            <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReservaDisp"
-             >
-              Reservar
-            </button>
-          </footer>
-        </section>
-      </article>
-
+          <header>
+            <h2>Laboratorio de Electrónica</h2>
+            <p>Bloque D</p>
+          </header>
+          <section>
+            <h3>Software Disponible</h3>
+            <div class="lista-software">
+              <span class="tag-software">Proteus</span>
+              <span class="tag-software">MATLAB</span>
+              <span class="tag-software">Arduino IDE</span>
+            </div>
+            <p class="capacidad-lab">Capacidad: <strong>20 estaciones</strong></p>
+            <hr>
+            <footer>
+              <span class="badge-disponible">DISPONIBLE</span>
+              <div class="acciones-tarjeta">
+                <button class="btn-reservar" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                  Reservar
+                </button>
+                <a href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
+                  <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
     </main>
 
     <!-- Modal -->
-    <div class="modal fade" id="modalReservaDisp" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="modalReserva" tabindex="-1" aria-labelledby="modalReservaLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content modal-espe">
+        <form action="../confirmacion/confirmacion.html" method="GET" class="modal-content modal-espe">
+
           <div class="modal-header modal-header-espe">
-            <h5 class="modal-title">
+            <h5 class="modal-title" id="modalReservaLabel">
               <i class="fa-solid fa-calendar-check"></i> Confirmar Reserva
             </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
           </div>
+
           <div class="modal-body">
-            <p class="modal-lab-nombre">¿Deseas confirmar tu reserva?</p>
-            <p class="modal-lab-bloque">Selecciona fecha y hora de uso</p>
+            <p class="modal-lab-nombre" id="modalLabNombre">Laboratorio de Cómputo 1</p>
+            <p class="modal-lab-bloque" id="modalLabBloque">Bloque A</p>
             <hr>
+
             <div class="modal-form-grupo">
-              <label>Fecha</label>
-              <input type="date" class="modal-input">
+              <label for="modalFecha">Fecha de reserva</label>
+              <input type="date" class="modal-input" id="modalFecha" name="fecha" required>
             </div>
+
             <div class="modal-form-grupo">
-              <label>Hora inicio</label>
-              <input type="time" class="modal-input">
+              <label for="modalHoraInicio">Hora inicio</label>
+              <input type="time" class="modal-input" id="modalHoraInicio" name="hora_inicio" required>
             </div>
+
             <div class="modal-form-grupo">
-              <label>Hora fin</label>
-              <input type="time" class="modal-input">
+              <label for="modalHoraFin">Hora fin</label>
+              <input type="time" class="modal-input" id="modalHoraFin" name="hora_fin" required>
             </div>
           </div>
+
           <div class="modal-footer modal-footer-espe">
             <button type="button" class="btn-modal-cancelar" data-bs-dismiss="modal">Cancelar</button>
-            <a href="../confirmacion/confirmacion.html" class="btn-modal-confirmar">
-              <i class="fa-solid fa-check"></i> Confirmar
-            </a>
+            <button type="submit" class="btn-modal-confirmar">
+              <i class="fa-solid fa-check"></i> Confirmar Reserva
+            </button>
           </div>
-        </div>
+
+        </form>
       </div>
     </div>
 

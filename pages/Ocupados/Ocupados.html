@@ -64,26 +64,32 @@
 
     <main id="grilla-ocupados">
 
-      <article class="tarjeta ocupado">
-        <header>
-          <h2>Laboratorio de Redes</h2>
-          <p>Bloque B</p>
-        </header>
-        <section>
-          <h3>Software Disponible</h3>
-          <ul class="lista-software-ul">
-            <li>Packet Tracer</li>
-            <li>Wireshark</li>
-            <li>GNS3</li>
-          </ul>
-          <p class="capacidad">Capacidad: <strong>25 estaciones</strong></p>
-          <hr>
-          <footer>
-            <span class="badge-ocupado">OCUPADO</span>
-            <button class="btn-reservado" disabled>Reservado</button>
-          </footer>
-        </section>
-      </article>
+       <article class="tarjeta">
+          <header>
+            <h2>Laboratorio de Redes</h2>
+            <p>Bloque B</p>
+          </header>
+          <section>
+            <h3>Software Disponible</h3>
+            <div class="lista-software">
+              <span class="tag-software">Packet Tracer</span>
+              <span class="tag-software">Wireshark</span>
+              <span class="tag-software">GNS3</span>
+            </div>
+            <p class="capacidad-lab">Capacidad: <strong>25 estaciones</strong></p>
+            <hr>
+            <footer>
+              <span class="badge-ocupado">OCUPADO</span>
+              <div class="acciones-tarjeta">
+                <button disabled class="btn-reservado">Reservado</button>
+                <a href="https://maps.app.goo.gl/d2ScjC3G9fAjWrZv9" target="_blank" class="enlace-ubicacion">
+                  <i class="fa-solid fa-location-dot"></i> Ver Ubicación
+                </a>
+              </div>
+            </footer>
+          </section>
+        </article>
+
 
     </main>
 
