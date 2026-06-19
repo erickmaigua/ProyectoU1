@@ -93,6 +93,5 @@ En esta etapa los datos son simulados directamente en el HTML. En una implementa
 
 ## Autor
 
-Proyecto desarrollado como parte del curso de Desarrollo Web  
-**Universidad de las Fuerzas Armadas ESPE** — Santo Domingo, Ecuador  
-Período académico 2026
+Erick Jardiel Maigua Toro
+Proyecto final parcial 2 Fundamentos de sistemas web 
